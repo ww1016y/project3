@@ -1,0 +1,8 @@
+prefix=/home/nvidia/project2/project2/catkin_ws/devel
+
+Name: ball_chaser
+Description: Description of ball_chaser
+Version: 0.0.0
+Cflags: -I/home/nvidia/project2/project2/catkin_ws/devel/include
+Libs: -L/home/nvidia/project2/project2/catkin_ws/devel/lib 
+Requires: 
