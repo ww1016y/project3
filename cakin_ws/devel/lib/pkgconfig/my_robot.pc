@@ -1,8 +1,8 @@
-prefix=/home/nvidia/project2/project2/cakin_ws/devel
+prefix=/home/nvidia/project3/project3/cakin_ws/devel
 
 Name: my_robot
 Description: Description of my_robot
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/nvidia/project2/project2/cakin_ws/devel/lib 
+Libs: -L/home/nvidia/project3/project3/cakin_ws/devel/lib 
 Requires: 
