@@ -1,8 +1,0 @@
-prefix=/home/jeongae13choi/project3/cakin_ws/install
-
-Name: my_robot
-Description: Description of my_robot
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jeongae13choi/project3/cakin_ws/install/lib 
-Requires: 
