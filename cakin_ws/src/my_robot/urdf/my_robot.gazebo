@@ -5,6 +5,7 @@
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
     <!--plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so"-->
       <legacyMode>false</legacyMode>
+      <robotNamespace>/</robotNamespace>
       <alwaysOn>true</alwaysOn>
       <updateRate>10</updateRate>
       <leftJoint>left_wheel_hinge</leftJoint>
@@ -91,7 +92,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-        <topicName>/scan</topicName>
+        <topicName>/my_robot/laser/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
     </sensor>

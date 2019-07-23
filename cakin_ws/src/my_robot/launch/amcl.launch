@@ -12,13 +12,30 @@
 		<param name="global_frame_id" value="map"/>
 
 		<!-- If you choose to define initial pose here -->
-	        <!--param name="initial_pose_x" value="0"/-->
-    	  	<!--param name="initial_pose_y" value="0"/-->
+	        <param name="initial_pose_x" value="0.0"/>
+        <param name="initial_pose_y" value="0.0"/>
+        <param name="initial_pose_a" value="-1.57"/>
+
+	<!--filter-->
+        <param name="min_particles" value="200"/>
+        <param name="max_particles" value="5000"/>
+
+        <!--LIDAR-->
+        <param name="laser_max_beams" value="100"/>
+        <param name="laser_min_range" value="-1.0"/>
+        <param name="laser_z_rand" value="0.05"/>
+        <param name="laser_z_hit" value="0.9"/>
+
+
 	</node>
 
 	<!-- Move Base -->
 	<node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+	 <!--remap topics-->
+        <remap from="cmd_vel" to="cmd_vel"/>
+        <remap from="odom" to="odom"/>
 		<remap from="scan" to="my_robot/laser/scan"/>
+
 		<param name="base_global_planner" value="navfn/NavfnROS" />
 		<param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>	
 		<rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />

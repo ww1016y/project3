@@ -1,0 +1,2 @@
+my_robot
+-DCATKIN_DEVEL_PREFIX=/home/jeongae13choi/project3/cakin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jeongae13choi/project3/cakin_ws/install -G Unix Makefiles
